@@ -245,7 +245,7 @@ const StudentAttendanceSystem: React.FC<StudentAttendanceSystemProps> = ({ curre
                 height: r.height,
                 recordedDate: r.recorded_at, // Map to recordedDate to match types.ts
                 academicYear: r.academic_year,
-                recordedBy: r.recorded_by,
+                createdBy: r.created_by,
                 createdAt: r.created_at
             })));
         }
@@ -296,7 +296,7 @@ const StudentAttendanceSystem: React.FC<StudentAttendanceSystemProps> = ({ curre
                     height: parseFloat(newHeight),
                     recorded_at: new Date().toISOString(),
                     academic_year: currentAcademicYear,
-                    recorded_by: currentUser.id
+                    created_by: currentUser.id
                 }]);
             
             if (error) throw error;

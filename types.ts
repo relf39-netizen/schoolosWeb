@@ -325,7 +325,7 @@ export interface StudentHealthRecord {
   height: number;
   recordedDate: string; // YYYY-MM-DD
   academicYear: string;
-  recordedBy: string; // Teacher ID
+  createdBy: string; // Teacher ID
   createdAt: string;
 }
 
